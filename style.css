@@ -1,45 +1,109 @@
-/* Основные стили для кнопок */
+/* Подключаем шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+/* Общие стили */
+body {
+    font-family: 'Merriweather', serif;
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a); /* Темный фон */
+    color: #d4af37; /* Золотой текст */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-image: url('background-pattern.png'); /* Текстура фона */
+    background-size: cover;
+}
+
+/* Заголовки */
+h1, h2, h3 {
+    font-family: 'Cinzel', serif;
+    color: #d4af37; /* Золотой */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Легкая тень для заголовков */
+}
+
+/* Стили для кнопок */
 button {
-    background-color: #4CAF50; /* Зеленый цвет */
-    color: white;
-    border: none;
-    padding: 10px 20px;
+    background-color: #b07a3a; /* Медный цвет */
+    color: #fff;
     font-size: 16px;
-    border-radius: 5px;
+    padding: 12px 24px;
+    border: 2px solid #d4af37; /* Золотая граница */
+    border-radius: 8px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out; /* Плавный переход */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Тень */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Тень */
+}
+
+/* Эффект нажатия */
+button:active {
+    transform: scale(0.98); /* Эффект сжатия */
 }
 
 /* Эффект при наведении */
-<button class="pulse">Отправить</button> {
-    background-color: #45a049; /* Темно-зеленый цвет при наведении */
-    transform: scale(1.1); /* Увеличение кнопки */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Более выраженная тень */
+button:hover {
+    background-color: #d4af37;
+    border-color: #b07a3a;
+    transform: scale(1.05); /* Легкое увеличение */
 }
 
-/* Эффект при нажатии */
-button:active {
-    transform: scale(0.95); /* Эффект "нажатия" */
-}
-
-/* Пульсация кнопки */
+/* Пульсация кнопок */
 button.pulse {
-    animation: pulse-animation 1.5s infinite; /* Пульсация бесконечно */
+    animation: pulse-animation 1.5s infinite;
 }
 
 /* Анимация пульсации */
 @keyframes pulse-animation {
     0% {
         transform: scale(1);
-        background-color: #4CAF50;
+        background-color: #b07a3a;
     }
     50% {
         transform: scale(1.1);
-        background-color: #66bb6a; /* Легкий светло-зеленый оттенок */
+        background-color: #d4af37;
     }
     100% {
         transform: scale(1);
-        background-color: #4CAF50;
+        background-color: #b07a3a;
     }
+}
+
+/* Стиль для карточек с контентом */
+.card {
+    background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный черный */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    border: 2px solid #b07a3a; /* Медная граница */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Эффект при наведении */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Увеличение тени */
+}
+
+/* Стили для ссылок */
+a {
+    color: #d4af37;
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Сетка для контента */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Стили для иконок */
+.icon {
+    font-size: 20px;
+    margin-right: 10px;
 }
