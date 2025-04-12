@@ -1,0 +1,42 @@
+/* Анимация для кнопок */
+button {
+    background-color: #4CAF50; /* Зеленый цвет */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Плавный переход */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #45a049; /* Темно-зеленый при наведении */
+    transform: scale(1.1); /* Увеличение кнопки */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Более выраженная тень */
+}
+
+button:active {
+    transform: scale(0.95); /* Эффект "нажатия" */
+}
+
+/* Пульсация кнопки */
+button.pulse {
+    animation: pulse-animation 1.5s infinite;
+}
+
+@keyframes pulse-animation {
+    0% {
+        transform: scale(1);
+        background-color: #4CAF50;
+    }
+    50% {
+        transform: scale(1.1);
+        background-color: #66bb6a; /* Легкий светло-зеленый оттенок */
+    }
+    100% {
+        transform: scale(1);
+        background-color: #4CAF50;
+    }
+}
