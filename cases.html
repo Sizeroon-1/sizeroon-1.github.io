@@ -1,59 +1,85 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Дела</title>
-</head<head>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Дела Ланкастера</title>
+  <style>
+    body {
+      background-color: #0b0b0b;
+      color: #f5f5dc;
+      font-family: 'Georgia', serif;
+      padding: 20px;
+      background-image: url('https://i.ibb.co/FVK9mRV/bg-texture.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(20, 20, 20, 0.85);
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid gold;
+    }
+
+    h1 {
+      text-align: center;
+      color: gold;
+    }
+
+    .case {
+      margin: 20px 0;
+      padding: 15px;
+      border-left: 4px solid gold;
+      background-color: rgba(255, 255, 255, 0.02);
+    }
+
+    .case h2 {
+      color: gold;
+      margin-bottom: 5px;
+    }
+
+    .case p {
+      margin: 0 0 10px 0;
+    }
+
+    .status {
+      font-style: italic;
+      color: gray;
+    }
+
+    a {
+      color: gold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <nav style="margin-bottom: 20px;">
-        <a href="index.html" style="margin-right:15px;">Главная</a>
-        <a href="cases.html" style="margin-right:15px; font-weight: bold;">Дела</a>
-        <a href="people.html" style="margin-right:15px;">Профили</a>
-        <a href="articles.html" style="margin-right:15px;">Статьи</a>
-        <a href="map.html" style="margin-right:15px;">Карта</a>
-        <a href="about.html">О проекте</a>
-   
-    </nav>
+  <div class="container">
+    <h1>Дела Ланкастера</h1>
 
-    <h1>Дела</h1>
-    <p>Здесь вы найдете описание текущих расследований и преступлений. Вы можете начать расследование каждого дела, исследуя улики и подозреваемых.</p>
+    <div class="case">
+      <h2>Дело №01 — Пропавший пациент</h2>
+      <p><strong>Дата:</strong> 3 марта 2025</p>
+      <p>Из психиатрической клиники исчез пациент. Последним, кто его видел, была Агата Штерн. Подозреваются несколько сотрудников больницы.</p>
+      <p class="status">Статус: Открыто</p>
+      <a href="#">Перейти к расследованию</a>
+    </div>
 
-    <h2>Дело 1: Исчезновение пациента</h2>
-    <p><strong>Описание:</strong> В городской больнице исчез пациент. Последний раз его видели ночью, когда он был в палате на очередном обследовании. Он не оставил записок, и его следы теряются после ночной смены.</p>
-    <p><strong>Улики:</strong> 
-        <ul>
-            <li>Найдена забытая медицинская карта пациента.</li>
-            <li>Камеры видеонаблюдения не зафиксировали его выход.</li>
-            <li>Показания медсестры, что она слышала шум в коридоре в ночь исчезновения.</li>
-        </ul>
-    </p>
-    <p><strong>Подозреваемые:</strong> 
-        <ul>
-            <li>Анна Лебедева — медсестра, которая была на смене в ту ночь.</li>
-            <li>Виктор Морозов — уборщик, который находился в больнице в тот же момент.</li>
-        </ul>
-    </p>
-    <button onclick="window.location.href='investigation1.html'">Начать расследование</button>
+    <div class="case">
+      <h2>Дело №00 — Пролог</h2>
+      <p><strong>Дата:</strong> 29 февраля 2025</p>
+      <p>Первая зафиксированная странность. Виктор Морозов находит неподписанное письмо с координатами места преступления, которого не было в архивах.</p>
+      <p class="status">Статус: Завершено</p>
+      <a href="#">Читать материалы</a>
+    </div>
 
-    <h2>Дело 2: Загадочная смерть сотрудника</h2>
-    <p><strong>Описание:</strong> В офисе крупной компании найден мертвый сотрудник. Согласно отчетам, он был последним, кто покинул офис в ночь перед его смертью. Официально причиной смерти признано самоубийство, но есть подозрения на убийство.</p>
-    <p><strong>Улики:</strong> 
-        <ul>
-            <li>Неясные следы на месте преступления.</li>
-            <li>Свидетельства коллег, что он был в конфликте с начальником.</li>
-            <li>Неисправности в записях с видеокамер.</li>
-        </ul>
-    </p>
-    <p><strong>Подозреваемые:</strong> 
-        <ul>
-            <li>Марина Смирнова — начальник отдела.</li>
-            <li>Егор Петров — коллега, который был замечен возле офиса в день убийства.</li>
-        </ul>
-    </p>
-    <button onclick="window.location.href='investigation2.html'">Начать расследование</button>
-
+    <a href="index.html">← Назад в город</a>
+  </div>
 </body>
-</html>>
+</html>
