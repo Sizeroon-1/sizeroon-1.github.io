@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Жители Ланкастера</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #121212;
+      color: #f5f5dc;
+      background-image: url('https://i.ibb.co/FVK9mRV/bg-texture.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+      background-color: rgba(20, 20, 20, 0.9);
+      border-radius: 12px;
+    }
+
+    h1 {
+      text-align: center;
+      color: gold;
+      margin-bottom: 40px;
+    }
+
+    .character-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .character {
+      width: 240px;
+      background-color: #1f1f1f;
+      border: 1px solid gold;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 0 10px rgba(255, 215, 0, 0.2);
+    }
+
+    .character img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    .character h3 {
+      margin: 10px 0 5px 0;
+      color: gold;
+    }
+
+    .character p {
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      background-color: gold;
+      color: #1f1f1f;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background-color: #ffdf00;
+    }
+
+    .back {
+      display: block;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .back a {
+      color: gold;
+      text-decoration: none;
+    }
+
+    .back a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Жители Ланкастера</h1>
+
+    <div class="character-grid">
+      <div class="character">
+        <img src="https://i.ibb.co/M9qVZN5/viktor.jpg" alt="Виктор Морозов">
+        <h3>Виктор Морозов</h3>
+        <p>Следователь, ветеран дела</p>
+        <a class="btn" href="#">Открыть досье</a>
+      </div>
+
+      <div class="character">
+        <img src="https://i.ibb.co/G3MR2F5/agata.jpg" alt="Агата Штерн">
+        <h3>Агата Штерн</h3>
+        <p>Техник городской больницы</p>
+        <a class="btn" href="#">Открыть досье</a>
+      </div>
+
+      <!-- Добавляй новых персонажей здесь -->
+    </div>
+
+    <div class="back">
+      <a href="index.html">← Назад в город</a>
+    </div>
+  </div>
+</body>
+</html>
